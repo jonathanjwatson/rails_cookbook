@@ -1,1 +1,8 @@
-<h1><%= @example_data %></h1>
+<ul>
+    <% @recipes.each do |recipe| %>
+    <li><div>
+        <h1><%= recipe.title %></h1>
+        <h3><%= recipe.description %></h3>
+    </div></li>
+    <% end %>
+</ul>
